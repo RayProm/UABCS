@@ -1,0 +1,335 @@
+* {
+  box-sizing: border-box;
+}
+/*font-family: Montserrat;*/
+body {
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+header, footer, .btn, .background {
+  background-color: #32618d;
+}
+input {
+  border-radius: 5px;
+  text-align: center;
+  font-size: 10px;
+  margin: 10px;
+  width: 100%;
+  height: 30px;
+}
+.btn {
+  color: white;
+  font-size: 10px;
+  height: 30px;
+  width: 120px;
+  border-radius: 5px;
+  margin-top: 10px;
+  float: right;
+}
+.color-g {
+  background-color: green;
+}
+.menu {
+  font-size: 12px;
+  color: #32618d;
+  margin: 15px;
+  padding: 5px;
+  float: left;
+  text-decoration: none;
+}
+.menu:hover {
+  text-decoration: underline;
+}
+.oferta, .cont {
+  font-size: 20px;
+  padding: 10px;
+}
+.oferta {
+  color: #32618d;
+}
+.tamaño-1 {
+  font-size: 12px;
+  margin: 5px;
+  padding-top: 5px;
+}
+.tamaño-2 {
+  font-size: 10px;
+  color: #cdcdcd;
+  margin: 5px;
+}
+.tamaño-3 {
+  height: 150px;
+}
+.col-1 {
+  width: 90%;
+}
+.col-2 {
+  width: 10%;
+  align-items: right;
+  justify-content: right;
+}
+.direccion {
+  flex-direction: row;
+}
+.img-1 {
+  margin: auto;
+  width: 30%
+}
+.img-2 {
+  width: 30px;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
+}
+.img-3 {
+  width: 100%;
+}
+.img-4 {
+  width: 90%;
+}
+.mover-der {
+  float: left;
+}
+.linea {
+  color: green;
+  font-size: 8px;
+  padding-bottom: 2px;
+}
+.recuadros {
+  width: 20%;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
+  float: left;
+  border: solid 1px #cdcdcd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.centrar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cont {
+  background-color: #8d9ebe;
+  color: white;
+}
+.espacio-abajo, .espacio-a{
+  padding-bottom: 30px;
+}
+.cuadros {
+  width: 25%; 
+  padding-left: 40px;
+}
+footer {
+  color: #ecb60e;
+  padding: 20px;
+  font-size: 12px;
+}
+/*movil horizontal-tablet*/
+@media screen and (max-width: 768px) {
+  .col-1 {
+    width: 95%;
+  }
+  .col-2 {
+    width: 5%;
+    align-items: 
+    justify-content: right;
+  }
+  .img-1 {
+    width: 100%;
+  }
+  .img-2 {
+    width: 20px;
+    height: 20px;
+  }
+  .img-3 {
+    width: 100%;
+    height: 60%;
+  }
+  .img-4 {
+    align-items: center;
+    width: 85%;
+  }
+  .direccion {
+    flex-direction: column;
+  }
+  .cuadros {
+    width: 70%;
+    padding-left: 0px; 
+  }
+  .centrar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .menu {
+    font-size: 18px;
+    color: #32618d;
+    margin: 20px;
+    padding: 5px;
+    float: left;
+    text-decoration: none;
+    font-size: 5px;
+    color: #32618d;
+    margin: 5px;
+    padding: 5px;
+    float: left;
+    text-decoration: none;
+  }
+  .oferta {
+    color: #32618d;
+    font-size: 22px;
+    padding: 0px;
+  }
+  .foto {
+    width: 100%;
+    height: 60%;
+  }
+  .recuadros {
+    width: 80%;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+    float: left;
+    border: solid 1px #cdcdcd;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .tamaño-1 p {
+    font-size: 12px;
+    margin: 5px;
+    padding-top: 5px;
+  }
+  .linea p {
+    color: green;
+    font-size: 8px;
+    padding-bottom: 2px;
+  }
+  .tamaño-2 p {
+    font-size: 10px;
+    color: #cdcdcd;
+    margin: 5px;
+  }
+  .tamaño-3 {
+    height: 150px;
+  }
+  .btn div{
+    color: white;
+    font-size: 10px;
+    height: 30px;
+    width: 120px;
+    border-radius: 5px;
+    margin-top: 10px;
+    float: right;
+  }
+}
+/*movil*/
+@media screen and (max-width: 320px) {
+  .col-1 {
+    width: 90%;
+  }
+  .col-2 {
+    width: 10%;
+  }
+  .img-1 {
+    width: 90%;
+  }
+  .img-2 {
+    width: 20px;
+    height: 20px;
+  }
+  .img-3 {
+    width: 100%;
+    height: 60%;
+  }
+  .img-4 {
+    align-items: center;
+    width: 85%;
+  }
+  .columna {
+    flex-direction: column;
+  }
+  .cuadros {
+    width: 70%;
+    padding-left: 0px; 
+  }
+  .espacio-abajo {
+    padding-bottom: 10px!important;
+  }
+  .espacio-a {
+    padding-bottom: 2px!important;
+  }
+  .centrar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .menu {
+    font-size: 10px;
+    color: #32618d;
+    margin: 1px;
+    padding: 6px;
+    float: left;
+    text-decoration: none;
+  }
+  .oferta {
+    color: #32618d;
+    font-size: 20px;
+    padding: 0px;
+  }
+  .recuadros {
+    width: 80%;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+    margin-bottom: 4%;
+    float: left;
+    border: solid 1px #cdcdcd;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .tamaño-1 p {
+    font-size: 12px;
+    margin: 5px;
+    padding-top: 5px;
+  }
+  .linea p {
+    color: green;
+    font-size: 8px;
+    padding-bottom: 2px;
+  }
+  .tamaño-2 p {
+    font-size: 10px;
+    color: #cdcdcd;
+    margin: 5px;
+  }
+  .tamaño-3 {
+    height: 100px;
+  }
+  .btn div{
+    color: white;
+    font-size: 10px;
+    height: 30px;
+    width: 120px;
+    border-radius: 5px;
+    margin-top: 10px;
+    float: right;
+  }
+}
+/*
+.container div {
+    width: 100%!important;
+  }
+  .container div:nth-child(1) {
+    text-align: center;
+  }
+  .container div:nth-child(1) img{
+    width: 50%;
+  }*/
+/*impresora*/
+@media print {
+  .container div:nth-child(2) {
+    font-size: 30px;
+  }
+  .container div:nth-child(1) {
+    font-size: 10px;
+  }
+}
